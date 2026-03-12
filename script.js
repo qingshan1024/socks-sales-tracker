@@ -38,8 +38,8 @@ function updateTable() {
         const row = document.createElement('tr');
         row.innerHTML = `
             <td data-label="日期">${record.date}</td>
-            <td data-label="数量">${record.quantity} 双</td>
-            <td data-label="价格">${record.price.toFixed(2)} 元</td>
+            <td data-label="数量">${record.quantity} </td>
+            <td data-label="价格">${record.price.toFixed(2)} </td>
             <td data-label="操作"><button class="btn-delete" onclick="deleteRecord(${index})">删除</button></td>
         `;
         tbody.appendChild(row);
